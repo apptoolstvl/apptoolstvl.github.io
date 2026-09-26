@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Backup &amp; restore · ListHive Help</title>
+<meta name="description" content="Keep your data safe: encrypted backups, automatic backups and restoring.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><img class="brand-mark" src="img/logo.png" alt="" width="36" height="36">ListHive <small>Help</small></a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html" aria-current="page">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+    </details>
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="sidebar-title">Help topics</p>
+    <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html" aria-current="page">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+  </aside>
+  <main>
+<span class="eyebrow">Settings</span>
+<h1>Backup &amp; restore</h1>
+<p class="lede">ListHive keeps everything on your phone. There is no account and no cloud copy, so backups are how you protect your recipes, lists and photos against a lost phone, a new phone or an accidental uninstall.</p>
+
+<div class="warn"><span class="callout-title">The one rule to remember</span>
+<p>Backups are saved <strong>inside</strong> ListHive to start with. If you uninstall the app or clear its data, Android deletes them too. Every so often, copy a backup somewhere else: Google Drive, your Files app, email to yourself, or a computer.</p></div>
+
+<div class="toc">
+  <strong>On this page</strong>
+  <ol>
+    <li><a href="#password">Set a backup password</a></li>
+    <li><a href="#backup-now">Make a backup</a></li>
+    <li><a href="#copy">Keep a copy outside the app</a></li>
+    <li><a href="#auto">Automatic backups</a></li>
+    <li><a href="#restore">Restore a backup</a></li>
+    <li><a href="#new-phone">Moving to a new phone</a></li>
+    <li><a href="#storage">Media storage and freeing space</a></li>
+  </ol>
+</div>
+
+<div class="step">
+  <div class="prose">
+    <p>Everything lives in the <span class="ui">BACKUP</span> section of <span class="ui">Settings</span>:</p>
+    <ul>
+      <li><span class="ui">Backup Password</span>: whether your backups are encrypted.</li>
+      <li><span class="ui">Backup Now</span>: with the date of your last backup.</li>
+      <li><span class="ui">Backup — Export/Restore</span>: your saved backups.</li>
+      <li><span class="ui">Auto-Backup</span>: the schedule.</li>
+    </ul>
+  </div>
+  <figure class="shot"><img src="img/backup-01-settings.webp" alt="The Backup section of Settings" width="600" height="1224" loading="lazy"><figcaption>Settings → Backup</figcaption></figure>
+</div>
+
+<h2 id="password">Set a backup password</h2>
+<div class="step flip">
+  <div class="prose">
+    <p>With a password set, every backup is encrypted, so nobody can read it without the password, even if they get hold of the file.</p>
+    <ol class="steps">
+      <li>Tap <span class="ui">Backup Password</span>.</li>
+      <li>Enter a password of at least 6 characters, twice.</li>
+      <li>Tap <span class="ui">Save Password</span>. The row now says <em>Set — backups are encrypted</em>.</li>
+    </ol>
+    <div class="warn"><span class="callout-title">Write it down</span><p>You'll need this password to restore any backup, including on a new phone. It <strong>cannot be recovered</strong> if you forget it.</p></div>
+    <p>Without a password, <span class="ui">Backup Now</span> warns <em>Backup is not encrypted</em> and lets you carry on with <span class="ui">Back Up Anyway</span>.</p>
+  </div>
+  <figure class="shot"><img src="img/backup-02-password.webp" alt="Backup Password sheet with the password typed twice" width="600" height="1224" loading="lazy"><figcaption>Setting a backup password</figcaption></figure>
+</div>
+
+<h2 id="backup-now">Make a backup</h2>
+<div class="step">
+  <div class="prose">
+    <p>Tap <span class="ui">Backup Now</span>. The backup includes <em>everything</em>: all libraries, lists, groups, progress, settings and every photo, video, audio note and file.</p>
+    <p>It can take a minute if you have lots of photos or videos. The example data here (about 18 MB of media) took under a minute on a test phone. When it's done you'll see <em>Backup Saved</em>, with three choices:</p>
+    <ul>
+      <li><span class="ui">Choose folder…</span>: save a copy into a folder on your phone (Android).</li>
+      <li><span class="ui">Share…</span>: send a copy to Google Drive, email, or any other app.</li>
+      <li><span class="ui">Not now</span>: keep it inside the app only.</li>
+    </ul>
+    <div class="note"><p>Making a backup needs free space on your phone's main storage of roughly twice the size of your data.</p></div>
+  </div>
+  <figure class="shot"><img src="img/backup-03-saved.webp" alt="Backup Saved dialog with Not now, Choose folder and Share" width="600" height="1224" loading="lazy"><figcaption>Backup saved</figcaption></figure>
+</div>
+
+<h2 id="copy">Keep a copy outside the app</h2>
+<div class="step flip">
+  <div class="prose">
+    <p>Tap <span class="ui">Backup — Export/Restore</span> to see every backup ListHive has made, newest first (marked <em>Latest</em>). For each one:</p>
+    <ul>
+      <li><span class="ui">Share</span>: send it to Drive, email or a computer. This works for backups of any size.</li>
+      <li><span class="ui">To folder…</span>: write it into a folder you pick. Very large backups may need <span class="ui">Share</span> instead.</li>
+      <li><span class="ui">Restore</span>: see <a href="#restore">below</a>.</li>
+      <li><span class="ui">Delete</span>: remove it.</li>
+    </ul>
+    <p>Backup files are named like <code>listhive_backup_2026-09-26_23-16.lhbak</code>.</p>
+  </div>
+  <figure class="shot"><img src="img/backup-04-restore.webp" alt="Backup Export/Restore sheet with one backup and Restore, Share, To folder, Delete" width="600" height="1300" loading="lazy"><figcaption>Your saved backups</figcaption></figure>
+</div>
+
+<h2 id="auto">Automatic backups</h2>
+<div class="step">
+  <div class="prose">
+    <p><span class="ui">Auto-Backup</span> makes a backup for you on a schedule. Tap <span class="ui">Frequency</span> and choose <em>Daily</em> or <em>Weekly</em> (or <em>Off</em>). ListHive makes the backup the next time you open the app after it's due.</p>
+    <p>Under <span class="ui">RETENTION</span>, <span class="ui">Backups to Keep</span> decides how many to hold on to. Older ones are deleted automatically. The note at the bottom shows how big each backup is, so you can see how much space they'll take. <span class="ui">Clear All But Latest</span> frees space in one tap.</p>
+    <div class="note"><p>Automatic backups are saved inside the app, so the <a href="#copy">one rule</a> still applies. Share a copy out now and then.</p></div>
+  </div>
+  <div class="shots" style="margin:0">
+    <figure class="shot"><img src="img/backup-05-auto.webp" alt="Auto-Backup screen with the warning card, last backup and Weekly frequency" width="600" height="1224" loading="lazy"><figcaption>Auto-Backup</figcaption></figure>
+    <figure class="shot"><img src="img/backup-06-retention.webp" alt="Backups to Keep with options 2, 4, 7 and 5 and Clear All But Latest" width="600" height="1224" loading="lazy"><figcaption>How many to keep</figcaption></figure>
+  </div>
+</div>
+
+<h2 id="restore">Restore a backup</h2>
+<div class="prose">
+  <ol class="steps">
+    <li>Go to <span class="ui">Settings</span> → <span class="ui">Backup — Export/Restore</span>.</li>
+    <li>Tap <span class="ui">Restore</span> on a backup in the list, or <span class="ui">Pick from device</span> to choose a backup file you saved elsewhere.</li>
+    <li>Confirm. For an encrypted backup, enter the backup password and tap <span class="ui">Decrypt &amp; Restore</span>.</li>
+  </ol>
+  <div class="warn"><span class="callout-title">Restoring replaces everything</span><p>A restore <strong>replaces all</strong> the data currently in ListHive with the backup's contents. It can't be undone. If you're unsure, make a fresh backup first. If a restore fails part-way, ListHive puts your previous data back.</p></div>
+</div>
+
+<h2 id="new-phone">Moving to a new phone</h2>
+<ol class="steps prose">
+  <li>On the old phone: <span class="ui">Backup Now</span>, then <span class="ui">Share…</span> the backup to Google Drive (or email it to yourself).</li>
+  <li>On the new phone: install ListHive from Google Play and open it.</li>
+  <li>Download the backup file from Drive to the new phone.</li>
+  <li>In ListHive: <span class="ui">Settings</span> → <span class="ui">Backup — Export/Restore</span> → <span class="ui">Pick from device</span>, choose the file, and enter your backup password if you set one.</li>
+</ol>
+<div class="note prose"><p>If you bought <strong>Remove Ads</strong>, tap <span class="ui">Restore Purchase</span> in <span class="ui">Settings</span> on the new phone. See <a href="settings.html#ads">Ads and Remove Ads</a>.</p></div>
+
+<h2 id="storage">Media storage and freeing space</h2>
+<div class="step flip">
+  <div class="prose">
+    <p>Further down in <span class="ui">Settings</span>, <span class="ui">MEDIA STORAGE</span> shows how much space ListHive's photos, audio, video and files take.</p>
+    <ul>
+      <li><span class="ui">Extract Media to Device</span>: copies all ListHive's media into a <em>ListHive Media</em> folder on your phone, sorted by library and field, so you can use them outside the app (Android).</li>
+      <li><span class="ui">Clean Up Unused Files</span>: deletes media that no item uses any more, for example photos from items you deleted.</li>
+    </ul>
+  </div>
+  <figure class="shot"><img src="img/settings-07-storage.webp" alt="Media storage totals with Extract Media to Device and Clean Up Unused Files" width="600" height="1224" loading="lazy"><figcaption>Media storage</figcaption></figure>
+</div>
+
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="import-export.html"><span>← Previous</span>Import, CSV &amp; QR</a><a class="next" href="settings.html"><span>Next →</span>Settings</a></nav>
+  </main>
+</div>
+<footer>
+  <div class="inner">
+    <p>ListHive Help · <a href="https://sites.google.com/view/listhive-privacy/home">Privacy policy</a> · <a href="mailto:apptools.tvl@gmail.com">apptools.tvl@gmail.com</a> · <a href="https://play.google.com/store/apps/details?id=com.apptoolstvl.ListHive">ListHive on Google Play</a></p>
+    <p>© 2026 ListHive / apptools.tvl. Recipe photos: Wikimedia Commons contributors, see <a href="credits.html">Credits</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

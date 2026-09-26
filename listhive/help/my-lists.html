@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Lists · ListHive Help</title>
+<meta name="description" content="Build lists from your libraries: groups, notes, sections, photos, audio notes and local entries.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><img class="brand-mark" src="img/logo.png" alt="" width="36" height="36">ListHive <small>Help</small></a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html" aria-current="page">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+    </details>
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="sidebar-title">Help topics</p>
+    <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html" aria-current="page">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+  </aside>
+  <main>
+<span class="eyebrow">My Lists</span>
+<h1>My Lists</h1>
+<p class="lede">A list is a selection for a purpose. Examples are this week's dinners, one birthday party, a class plan or a gig set list. Lists hold items picked from your libraries, plus notes, section headings, photos, links, videos, files, voice notes and scanned text.</p>
+
+<div class="toc">
+  <strong>On this page</strong>
+  <ol>
+    <li><a href="#create">Create a list</a></li>
+    <li><a href="#modes">Simple lists and lists with groups</a></li>
+    <li><a href="#groups">Working with groups</a></li>
+    <li><a href="#add-items">Add items from a library</a></li>
+    <li><a href="#local-entry">Local entries</a></li>
+    <li><a href="#other-items">Notes, sections, photos, links and more</a></li>
+    <li><a href="#audio">Audio notes</a></li>
+    <li><a href="#scan">Scan text from a photo</a></li>
+    <li><a href="#organise">Reorder, move, copy and remove</a></li>
+    <li><a href="#visibility">Choose which fields show</a></li>
+    <li><a href="#search">Search all your lists</a></li>
+  </ol>
+</div>
+
+<h2 id="create">Create a list</h2>
+<div class="step">
+  <div class="prose">
+    <ol class="steps">
+      <li>On the <span class="ui">My Lists</span> tab, tap <span class="ui">+</span>.</li>
+      <li>Type a name such as <em>Holiday Baking</em>, and a description if you like.</li>
+      <li>Choose the <span class="ui">MODE</span>: <span class="ui">Simple</span> (<em>Flat list of items</em>) or <span class="ui">Groups</span> (<em>Items organised in groups</em>). See <a href="#modes">below</a>.</li>
+      <li>For a list with groups, choose how groups are named under <span class="ui">IDENTIFY GROUPS BY</span>: <span class="ui">Date</span> (e.g. <em>2026-10-04</em>) or <span class="ui">Custom Label</span> (e.g. <em>Weekend · Slow and Sweet</em>).</li>
+      <li>Tap <span class="ui">Create List</span>.</li>
+    </ol>
+  </div>
+  <figure class="shot"><img src="img/list-01-new-list.webp" alt="New List form with Holiday Baking, Groups mode and Custom Label" width="600" height="1224" loading="lazy"><figcaption>A new list with groups</figcaption></figure>
+</div>
+
+<h2 id="modes">Simple lists and lists with groups</h2>
+<div class="step flip">
+  <div class="prose">
+    <p><strong>🎂 Sam's Birthday Dinner</strong> is a <strong>Simple</strong> list: one evening, one list of things. Tapping it goes straight to its items.</p>
+    <p><strong>🍲 This Week's Meals</strong> uses <strong>Groups</strong>: <em>Dinners · Mon to Fri</em> and <em>Weekend · Slow and Sweet</em>. Tapping it shows the groups first, each with its own items and progress. Use groups when a list repeats: a weekly plan, a class that meets many times, a set list per gig.</p>
+    <p>You can switch a list between the two later. <strong>Long-press</strong> the list on the <span class="ui">My Lists</span> tab and choose <span class="ui">Edit</span>. A list can only become Simple when it has one group left.</p>
+  </div>
+  <div class="shots" style="margin:0">
+    <figure class="shot"><img src="img/list-02-longpress-menu.webp" alt="Long-press menu with Edit, Duplicate and Delete" width="600" height="1224" loading="lazy"><figcaption>Long-press a list</figcaption></figure>
+    <figure class="shot"><img src="img/list-03-edit-list-simple.webp" alt="Edit List switching Sam's Birthday Dinner to Simple" width="600" height="1300" loading="lazy"><figcaption>Switching to Simple</figcaption></figure>
+  </div>
+</div>
+
+<h2 id="groups">Working with groups</h2>
+<div class="step">
+  <div class="prose">
+    <p>Inside a list with groups you'll see each group's name, item count, notes and a small progress circle that fills as items are marked done.</p>
+    <ul>
+      <li>Tap <span class="ui">+</span> to add a <span class="ui">New Group</span>. Give it a date or label and optional <span class="ui">Notes</span>, such as <em>Sam's birthday Sunday</em>.</li>
+      <li>Sort groups by <span class="ui">Name</span>, <span class="ui">Created</span> or <span class="ui">Modified</span>. Tap the same button again to reverse the order.</li>
+      <li><strong>Long-press</strong> a group to <span class="ui">Edit Name</span>, <span class="ui">Duplicate Group</span> (handy for next week's plan) or <span class="ui">Delete Group</span>.</li>
+      <li>Tap ☆ to add a group to your favourites.</li>
+    </ul>
+  </div>
+  <figure class="shot"><img src="img/list-04-groups.webp" alt="This Week's Meals showing two groups with item counts and progress" width="600" height="1224" loading="lazy"><figcaption>The groups in This Week's Meals</figcaption></figure>
+</div>
+
+<div class="step flip">
+  <div class="prose">
+    <p>Open a group to see its items. Library items show their summary fields (<em>Italian · 15 · Easy</em>) and which library they came from. Section headings such as <em>MONDAY</em> break the list into parts, and a green tick marks items that are done.</p>
+    <p>The buttons along the top are:</p>
+    <ul>
+      <li><strong>≡</strong>: reorder mode.</li>
+      <li><strong>▤</strong>: field visibility.</li>
+      <li><strong>Share</strong>: see <a href="sharing.html">Sharing</a>.</li>
+      <li><strong>•••</strong>: <span class="ui">Reset Progress</span>, which clears every tick in the group.</li>
+    </ul>
+    <p>Tap any item to open it in the <a href="playback.html">player</a>.</p>
+  </div>
+  <figure class="shot"><img src="img/list-05-group-items.webp" alt="Dinners Mon to Fri group with sections, recipes, notes and ticks" width="600" height="1224" loading="lazy"><figcaption>Inside a group</figcaption></figure>
+</div>
+
+<h2 id="add-items">Add items from a library</h2>
+<div class="step">
+  <div class="prose">
+    <p>Tap <span class="ui">+</span> inside a list or group to open <span class="ui">Add to List</span>, then choose what to add:</p>
+    <ul>
+      <li><span class="ui">Library Item</span>: one or more items from a library.</li>
+      <li><span class="ui">Note</span>, <span class="ui">Section Divider</span>: text of your own.</li>
+      <li><span class="ui">Photo</span>, <span class="ui">Video</span>, <span class="ui">File</span>, <span class="ui">URL</span>: media and links.</li>
+      <li><span class="ui">Audio Note</span>: record your voice, with live transcription.</li>
+      <li><span class="ui">Scan Text</span>: read text from a photo.</li>
+    </ul>
+  </div>
+  <figure class="shot"><img src="img/list-06-add-menu.webp" alt="Add to List menu with nine choices" width="600" height="1224" loading="lazy"><figcaption>Everything a list can hold</figcaption></figure>
+</div>
+
+<div class="step flip">
+  <div class="prose">
+    <p>Choosing <span class="ui">Library Item</span> opens <span class="ui">Add Items from Library</span>:</p>
+    <ol class="steps">
+      <li>Check the library next to <span class="ui">From:</span>. Tap it to switch to another library.</li>
+      <li>Search if you need to. <code>@field: text</code> works here too, and the chips sort the list.</li>
+      <li>Tick the items you want. Items already in this group are marked <em>Already added</em>.</li>
+      <li>Tap <span class="ui">Add 2 Items</span> (the number matches your selection).</li>
+    </ol>
+    <p>The ⓘ button previews an item, and the clock shows where it has been used before. That's useful for avoiding the same dinner two weeks running.</p>
+  </div>
+  <figure class="shot"><img src="img/list-07-add-from-library.webp" alt="Add Items from Library with Chana Masala and Mushroom Risotto ticked" width="600" height="1224" loading="lazy"><figcaption>Picking recipes for the week</figcaption></figure>
+</div>
+
+<h2 id="local-entry">Local entries</h2>
+<div class="step">
+  <div class="prose">
+    <p>Sometimes you need something in a list that isn't worth keeping in the library, like a one-off <em>Friday Pizza Night</em>. A <strong>local entry</strong> uses the library's fields but lives only in this list.</p>
+    <ol class="steps">
+      <li>In <span class="ui">Add Items from Library</span>, tap <span class="ui">New Local Entry (using library structure)</span>.</li>
+      <li>Fill in the fields, exactly as for a library item.</li>
+      <li>Tap <span class="ui">Add</span>.</li>
+    </ol>
+    <p>Local entries are marked <em>Local entry</em> in the list. If it turns out to be a keeper, open it and tap <span class="ui">Save to Library</span> to make it a normal library item.</p>
+  </div>
+  <figure class="shot"><img src="img/list-08-local-entry.webp" alt="New Local Entry form for Friday Pizza Night using the Recipe Box fields" width="600" height="1224" loading="lazy"><figcaption>A local entry uses the library's fields</figcaption></figure>
+</div>
+
+<h2 id="other-items">Notes, sections, photos, links and more</h2>
+<div class="step flip">
+  <div class="prose">
+    <p>Sam's Birthday Dinner mixes every kind of item:</p>
+    <ul>
+      <li><strong>Section Divider</strong>: a heading such as <em>BEFORE THE DAY</em> or <em>CAKE</em>. Sections aren't counted as items and don't need ticking.</li>
+      <li><strong>Note</strong>: free text in one of six tile colours (yellow, green, blue, pink, lavender, peach).</li>
+      <li><strong>File</strong>: the <em>Shopping list.pdf</em>. Tap to open it in another app.</li>
+      <li><strong>URL</strong>: a link with a title, such as <em>Birthday cake ideas</em>.</li>
+      <li><strong>Photo</strong> and <strong>Video</strong>: from the camera, gallery or files, each with a description.</li>
+    </ul>
+    <p>To change a note, photo, video, file or link later, long-press it and choose <span class="ui">Edit</span> (or <span class="ui">Edit Description</span>).</p>
+  </div>
+  <div class="shots" style="margin:0">
+    <figure class="shot"><img src="img/list-09-simple-list.webp" alt="Sam's Birthday Dinner with a PDF, audio note, link and library items" width="600" height="1224" loading="lazy"><figcaption>File, audio note, link, recipes</figcaption></figure>
+    <figure class="shot"><img src="img/list-09b-simple-list-2.webp" alt="Video, a yellow note, a local entry and a scanned recipe card" width="600" height="1224" loading="lazy"><figcaption>Video, note, local entry, scan</figcaption></figure>
+  </div>
+</div>
+
+<h2 id="audio">Audio notes</h2>
+<div class="step">
+  <div class="prose">
+    <p>An audio note records your voice and, if <span class="ui">Live transcription</span> is on, writes down what you say as you speak. The <em>Reminder from the market</em> note in Sam's Birthday Dinner was made this way.</p>
+    <ol class="steps">
+      <li>Tap <span class="ui">+</span> → <span class="ui">Audio Note</span>.</li>
+      <li>Check the <span class="ui">Language</span>, then tap <span class="ui">Start Recording</span>. You can pause and carry on.</li>
+      <li>When you stop, add a description, correct the transcript if needed, and save.</li>
+    </ol>
+    <div class="note"><p>ListHive asks for microphone permission the first time. <strong>Live</strong> transcription needs Android 13 or later. On older phones you record first, and ListHive offers to transcribe the recording afterwards.</p></div>
+  </div>
+  <figure class="shot"><img src="img/list-11-audio-note.webp" alt="Audio Note sheet with Language, Live transcription and Start Recording" width="600" height="1300" loading="lazy"><figcaption>Recording an audio note</figcaption></figure>
+</div>
+
+<h2 id="scan">Scan text from a photo</h2>
+<div class="step flip">
+  <div class="prose">
+    <p><span class="ui">Scan Text</span> reads the words in a photo, such as a printed page, a label or a handwritten recipe card, and turns them into text you can search and copy.</p>
+    <ol class="steps">
+      <li>Tap <span class="ui">+</span> → <span class="ui">Scan Text</span>.</li>
+      <li>Choose the <span class="ui">Language / script</span> (Latin covers English and most European languages).</li>
+      <li>Tap <span class="ui">Choose an Image</span> to take a photo or pick one.</li>
+      <li>Check the <span class="ui">Scanned text</span>, then choose <span class="ui">Save Image + Text</span>, <span class="ui">Image Only</span> or <span class="ui">Text Note Only</span>.</li>
+    </ol>
+    <div class="note"><p>The first scan in each script downloads a small language pack, so you need to be online the first time. If you see <em>“language pack is still downloading”</em>, wait a minute and tap <span class="ui">Rescan</span>.</p></div>
+  </div>
+  <figure class="shot"><img src="img/list-12-scan-text.webp" alt="Scan Text sheet with Latin script selected and Choose an Image" width="600" height="1300" loading="lazy"><figcaption>Scan Text</figcaption></figure>
+</div>
+
+<h2 id="organise">Reorder, move, copy and remove</h2>
+<div class="step">
+  <div class="prose">
+    <p><strong>Long-press</strong> any item for its menu:</p>
+    <ul>
+      <li><span class="ui">Select</span>: start selecting several items. The bar at the bottom then offers <span class="ui">Share</span>, <span class="ui">Move</span>, <span class="ui">Copy</span> and <span class="ui">Remove</span>.</li>
+      <li><span class="ui">Toggle Done</span>: tick or untick without opening the player.</li>
+      <li><span class="ui">Duplicate</span>: an extra copy in the same group.</li>
+      <li><span class="ui">Move to…</span> / <span class="ui">Copy to…</span>: send it to another group or list.</li>
+      <li><span class="ui">Remove from group</span>: takes it out of this list only. The library item is not deleted.</li>
+    </ul>
+    <p>To change the order, tap <strong>≡</strong> at the top, then long-press and drag items. Tap <span class="ui">Done</span> to save.</p>
+  </div>
+  <div class="shots" style="margin:0">
+    <figure class="shot"><img src="img/list-10-item-menu.webp" alt="Long-press menu for Weeknight Chicken Curry" width="600" height="1300" loading="lazy"><figcaption>The item menu</figcaption></figure>
+    <figure class="shot"><img src="img/list-13-reorder.webp" alt="Reorder mode with drag handles" width="600" height="1224" loading="lazy"><figcaption>Reorder mode</figcaption></figure>
+  </div>
+</div>
+
+<h2 id="visibility">Choose which fields show</h2>
+<div class="step flip">
+  <div class="prose">
+    <p>Tap <strong>▤</strong> at the top of a list or group to decide, field by field:</p>
+    <ul>
+      <li><strong>View</strong>: whether the field is shown when you play the list;</li>
+      <li><strong>Share</strong>: whether it's included when you share the list as text or a picture.</li>
+    </ul>
+    <p>For example, hide <em>Method</em> when sharing a menu with guests, but keep it in view for yourself. The icon turns orange when a group has its own settings.</p>
+  </div>
+  <figure class="shot"><img src="img/list-14-field-visibility.webp" alt="Override field visibility with View and Share checkboxes per field" width="600" height="1300" loading="lazy"><figcaption>Field visibility</figcaption></figure>
+</div>
+
+<h2 id="search">Search all your lists</h2>
+<div class="prose">
+  <p>The search box at the top of the <span class="ui">My Lists</span> tab looks through every list, group and item at once. Type at least two letters and results appear under <em>Lists</em>, <em>Groups</em> and <em>Items</em>. Tap a result to jump straight to it.</p>
+</div>
+
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="field-types.html"><span>← Previous</span>Field types</a><a class="next" href="playback.html"><span>Next →</span>Playing a list</a></nav>
+  </main>
+</div>
+<footer>
+  <div class="inner">
+    <p>ListHive Help · <a href="https://sites.google.com/view/listhive-privacy/home">Privacy policy</a> · <a href="mailto:apptools.tvl@gmail.com">apptools.tvl@gmail.com</a> · <a href="https://play.google.com/store/apps/details?id=com.apptoolstvl.ListHive">ListHive on Google Play</a></p>
+    <p>© 2026 ListHive / apptools.tvl. Recipe photos: Wikimedia Commons contributors, see <a href="credits.html">Credits</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

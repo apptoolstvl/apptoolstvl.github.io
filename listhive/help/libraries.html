@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Libraries · ListHive Help</title>
+<meta name="description" content="Create a library, design its fields, add and find items.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><img class="brand-mark" src="img/logo.png" alt="" width="36" height="36">ListHive <small>Help</small></a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html" aria-current="page">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+    </details>
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="sidebar-title">Help topics</p>
+    <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html" aria-current="page">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+  </aside>
+  <main>
+<span class="eyebrow libs">Libraries</span>
+<h1>Libraries</h1>
+<p class="lede">A library is your master collection of one kind of thing. You design its fields once, then every item in it has the same shape. In this guide the <strong>Recipe Box</strong> library holds every recipe we cook.</p>
+
+<div class="toc">
+  <strong>On this page</strong>
+  <ol>
+    <li><a href="#create">Create a library</a></li>
+    <li><a href="#fields">Design the fields</a></li>
+    <li><a href="#primary">The primary field</a></li>
+    <li><a href="#add">Add and edit items</a></li>
+    <li><a href="#view">View an item</a></li>
+    <li><a href="#find">Find items: search and sort</a></li>
+    <li><a href="#select">Select several items</a></li>
+    <li><a href="#to-list">Add an item to a list</a></li>
+    <li><a href="#folder">Make a library from a folder</a></li>
+    <li><a href="#manage">Rename, duplicate or delete a library</a></li>
+  </ol>
+</div>
+
+<div class="step">
+  <div class="prose">
+    <p>Open the <span class="ui">Libraries</span> tab to see all your libraries. Each card shows the library's name, its primary field (the 🔑 chip) and the start of its description. Tap a card to open it, or tap the ☆ to add it to your <a href="settings.html#favourites">favourites</a>.</p>
+    <p>The buttons at the top are:</p>
+    <ul>
+      <li><span class="ui">?</span>: a short <em>What is a Library?</em> guide.</li>
+      <li>📁: <a href="#folder">make a library from a folder</a> of files.</li>
+      <li>🔍: search every item in every library at once.</li>
+    </ul>
+  </div>
+  <figure class="shot"><img src="img/lib-01-libraries-tab.webp" alt="The Libraries tab showing Kitchen Suppliers and Recipe Box" width="600" height="1224" loading="lazy"><figcaption>The Libraries tab</figcaption></figure>
+</div>
+
+<h2 id="create">Create a library</h2>
+<div class="step">
+  <div class="prose">
+    <ol class="steps libs">
+      <li>On the <span class="ui">Libraries</span> tab, tap <span class="ui">+</span>.</li>
+      <li>Type a <span class="ui">Library Name</span>, for example <em>Pantry</em> or <em>Recipes</em>.</li>
+      <li>Tap <span class="ui">+ ADD FIELD</span> for each piece of information you want to keep. Give it a <span class="ui">Name</span> and choose a <span class="ui">Data Type</span> (see <a href="field-types.html">Field types</a>).</li>
+      <li>Tick <span class="ui">Set as Primary Field</span> on the field that names each item (see <a href="#primary">below</a>).</li>
+      <li>Tap <span class="ui">Save</span> in the top corner.</li>
+    </ol>
+    <div class="tip"><span class="callout-title">Start small</span><p>You don't need every field up front. You can add, rename, reorder or delete fields later from <span class="ui">Edit Fields</span>.</p></div>
+  </div>
+  <figure class="shot"><img src="img/lib-02-create-library.webp" alt="Create Library form with a Pantry library and an Ingredient field" width="600" height="1224" loading="lazy"><figcaption>Creating a library</figcaption></figure>
+</div>
+
+<h2 id="fields">Design the fields</h2>
+<div class="step">
+  <div class="prose">
+    <p>Open a library and you'll see its description, three buttons and the <span class="ui">DEFINE ITEM STRUCTURE</span> section:</p>
+    <ul>
+      <li><span class="ui">View Items</span>: the list of everything in the library.</li>
+      <li><span class="ui">Add Item</span>: a blank form for a new item.</li>
+      <li><span class="ui">CSV</span>: import or export many items at once with a spreadsheet (see <a href="import-export.html#csv">CSV import</a>).</li>
+      <li><span class="ui">Edit Fields</span>: add, change and reorder the fields.</li>
+    </ul>
+  </div>
+  <figure class="shot"><img src="img/lib-03-library-detail.webp" alt="Recipe Box library screen with View Items, Add Item, CSV and Edit Fields" width="600" height="1224" loading="lazy"><figcaption>Inside the Recipe Box</figcaption></figure>
+</div>
+
+<div class="step flip">
+  <div class="prose">
+    <p>The <span class="ui">Fields</span> screen lists every field in order, with its type underneath. From here you can:</p>
+    <ul>
+      <li>Tap <span class="ui">Add Field</span> to add a new one.</li>
+      <li>Tap a field to rename it, change its type, make it required or unique, or delete it.</li>
+      <li>Drag the handle to change the order fields appear in.</li>
+      <li>Turn on <span class="ui">Visible in summary</span> for the one or two fields you want to see on list tiles. In the Recipe Box, Cuisine, Time and Difficulty are shown: <em>Greek Salad · Greek · 10 · Easy</em>.</li>
+    </ul>
+    <p>The <span class="ui">Metadata</span> card at the bottom shows how many items the library holds and how much space its photos and files use.</p>
+  </div>
+  <figure class="shot"><img src="img/lib-07-fields.webp" alt="The Fields screen of the Recipe Box listing Recipe, Cuisine, Time, Difficulty and more" width="600" height="1224" loading="lazy"><figcaption>The Recipe Box fields</figcaption></figure>
+</div>
+
+<div class="step">
+  <div class="prose">
+    <h3 id="allowed-values">Select lists: set the allowed values</h3>
+    <p>A <em>select list</em> field lets you pick exactly one value from a fixed set, for example Cuisine: <em>Italian, Mexican, Indian, Greek, Asian, American, British, French</em>. After creating the field, tap it on the <span class="ui">Fields</span> screen and add each choice under <span class="ui">ALLOWED VALUES</span>.</p>
+    <p>If you later remove a value, items that already use it keep it. The value is marked <em>no longer an option</em> so you can spot and change it.</p>
+  </div>
+  <figure class="shot"><img src="img/lib-08-select-values.webp" alt="Editing the Cuisine field with its list of allowed values" width="600" height="1300" loading="lazy"><figcaption>Allowed values for Cuisine</figcaption></figure>
+</div>
+
+<h2 id="primary">The primary field</h2>
+<div class="prose">
+  <p>Every library has one <strong>primary field</strong>, which is the name each item is known by. In the Recipe Box it's <em>Recipe</em>; in Kitchen Suppliers it's <em>Supplier</em>. The primary field:</p>
+  <ul>
+    <li>is always required, and must be different for every item;</li>
+    <li>is what appears in bold on every tile and in search results;</li>
+    <li>is how ListHive matches items when you import a CSV or a <code>.listhive</code> file, so a recipe called <em>Greek Salad</em> in a file updates or skips your own <em>Greek Salad</em> instead of creating a copy.</li>
+  </ul>
+  <p>Only these types can be a primary field: text, number, date, link, email, phone and GPS location. You can change which field is primary later, from that field's settings on the <span class="ui">Fields</span> screen. ListHive checks that every item has a unique value first.</p>
+</div>
+
+<h2 id="add">Add and edit items</h2>
+<div class="step">
+  <div class="prose">
+    <ol class="steps libs">
+      <li>Open the library and tap <span class="ui">Add Item</span> (or <span class="ui">+</span> in the item list).</li>
+      <li>Fill in the fields. Photo, video, audio and file fields have a <span class="ui">Choose…</span> button; a gallery field has <span class="ui">Add Photos</span> so you can pick several at once.</li>
+      <li>Tap <span class="ui">Add</span>.</li>
+    </ol>
+    <p>To change an item later, open it and switch the toggle at the top from <span class="ui">View</span> to <span class="ui">Edit</span>, make your changes and tap <span class="ui">Save</span>. If you leave with unsaved changes, ListHive asks whether to keep editing.</p>
+  </div>
+  <figure class="shot"><img src="img/lib-14-edit-item.webp" alt="Editing the Green Valley Farm Stall supplier" width="600" height="1224" loading="lazy"><figcaption>Edit mode</figcaption></figure>
+</div>
+
+<h2 id="view">View an item</h2>
+<div class="step flip">
+  <div class="prose">
+    <p>Tap any item to open it in <span class="ui">View</span> mode. Everything is laid out for reading: photos full width, select lists and tags as chips, links you can tap, and players for video and audio.</p>
+    <ul>
+      <li><strong>Double-tap</strong> any value to copy it.</li>
+      <li>Use <span class="ui">Prev</span> and <span class="ui">Next</span> at the bottom to move through the library without going back to the list.</li>
+      <li>The small and large <span class="ui">A</span> buttons change the text size.</li>
+      <li>The clock icon shows <em>Usage</em>: which lists and groups this item has been used in, and when.</li>
+      <li>The share icon sends just this item (see <a href="sharing.html">Sharing</a>).</li>
+    </ul>
+  </div>
+  <div class="shots" style="margin:0">
+    <figure class="shot"><img src="img/lib-06-item-view.webp" alt="Spaghetti Aglio e Olio in view mode with photo, cuisine, time and difficulty" width="600" height="1224" loading="lazy"><figcaption>Top of a recipe</figcaption></figure>
+    <figure class="shot"><img src="img/lib-06b-item-view-2.webp" alt="Further down: gallery thumbnails, tags, source link and how-to video" width="600" height="1224" loading="lazy"><figcaption>Gallery, tags, link and video</figcaption></figure>
+  </div>
+</div>
+
+<h2 id="find">Find items: search and sort</h2>
+<div class="step">
+  <div class="prose">
+    <p>Tap <span class="ui">View Items</span> to see the whole library. The row of chips under the search box sorts the list: tap a field once for A→Z, again for Z→A, and a third time to switch sorting off. ListHive remembers your choice for each library.</p>
+    <h3>Search inside one field</h3>
+    <p>Typing in the search box looks through every field. To look in just one field, start with <code>@</code>, the field name, a colon and the text:</p>
+    <ul>
+      <li><code>@Tags: quick</code> finds the quick recipes.</li>
+      <li><code>@Cuisine: italian</code> finds everything Italian.</li>
+    </ul>
+    <p>Searching ignores capital letters. To search across all your libraries at once, use 🔍 on the <span class="ui">Libraries</span> tab.</p>
+  </div>
+  <figure class="shot"><img src="img/lib-05-field-search.webp" alt="Searching the Recipe Box for @Tags: quick" width="600" height="1224" loading="lazy"><figcaption>Searching one field with @</figcaption></figure>
+</div>
+
+<h2 id="select">Select several items</h2>
+<div class="step flip">
+  <div class="prose">
+    <p><strong>Long-press</strong> an item in the list to start selecting, then tap more items to add them. The bar at the bottom offers:</p>
+    <ul>
+      <li><span class="ui">Share</span>: send the selected items as a file, text or picture.</li>
+      <li><span class="ui">Move</span> or <span class="ui">Copy</span>: to <span class="ui">Another Library</span> or into a <span class="ui">My List</span>.</li>
+      <li><span class="ui">Delete</span>: remove them from the library.</li>
+    </ul>
+    <p>The <span class="ui">•••</span> menu at the top of the list also has <span class="ui">Select Items…</span> and <span class="ui">Delete All Items</span>.</p>
+    <div class="warn"><span class="callout-title">Deleting is permanent</span><p>Deleting a library item also removes it from every list it was added to.</p></div>
+  </div>
+  <figure class="shot"><img src="img/lib-13-multiselect.webp" alt="Two suppliers selected with Share, Move, Copy and Delete buttons" width="600" height="1224" loading="lazy"><figcaption>Selecting items</figcaption></figure>
+</div>
+
+<h2 id="to-list">Add an item to a list</h2>
+<div class="step">
+  <div class="prose">
+    <p>While viewing an item, tap <span class="ui">Add to My List</span> at the top. Choose the list and, for a list with groups, the group. You can also create a new list or group right there with <span class="ui">Create &amp; Select</span>.</p>
+    <p>Most of the time you'll add items the other way round, from inside a list. See <a href="my-lists.html#add-items">Adding items to a list</a>.</p>
+  </div>
+  <figure class="shot"><img src="img/lib-15-add-to-list.webp" alt="Adding Black Bean Quesadillas to This Week's Meals, Weekend group" width="600" height="1300" loading="lazy"><figcaption>Adding a recipe to the weekend plan</figcaption></figure>
+</div>
+
+<h2 id="folder">Make a library from a folder</h2>
+<div class="prose">
+  <p>If you already have a folder of photos, songs, videos or documents, ListHive can turn it into a library in one step. Tap 📁 on the <span class="ui">Libraries</span> tab, choose the folder, pick which <span class="ui">FILE TYPE</span> to include and whether to <span class="ui">Include sub-folders</span>, then tap <span class="ui">Scan Folder</span>. Each file becomes an item with <em>Title</em>, <em>File Path</em> and <em>Sub Folder</em> fields.</p>
+  <div class="note"><p>Folders in Google Drive and other cloud storage often can't be scanned. Download the files to your phone first.</p></div>
+</div>
+
+<h2 id="manage">Rename, duplicate or delete a library</h2>
+<div class="prose">
+  <p>Open the library and tap <span class="ui">•••</span> in the top corner: <span class="ui">Edit</span> changes the name and description, <span class="ui">Duplicate</span> makes a full copy, and <span class="ui">Delete</span> removes the library. You can also duplicate a library by long-pressing its card on the <span class="ui">Libraries</span> tab.</p>
+  <div class="warn"><span class="callout-title">Before you delete</span><p>Deleting a library also removes its items from every list that uses them. Consider <a href="sharing.html#export-file">exporting it as a file</a> first.</p></div>
+</div>
+
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="./"><span>← Previous</span>Getting started</a><a class="next" href="field-types.html"><span>Next →</span>Field types</a></nav>
+  </main>
+</div>
+<footer>
+  <div class="inner">
+    <p>ListHive Help · <a href="https://sites.google.com/view/listhive-privacy/home">Privacy policy</a> · <a href="mailto:apptools.tvl@gmail.com">apptools.tvl@gmail.com</a> · <a href="https://play.google.com/store/apps/details?id=com.apptoolstvl.ListHive">ListHive on Google Play</a></p>
+    <p>© 2026 ListHive / apptools.tvl. Recipe photos: Wikimedia Commons contributors, see <a href="credits.html">Credits</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

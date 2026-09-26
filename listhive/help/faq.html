@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ &amp; troubleshooting · ListHive Help</title>
+<meta name="description" content="Answers to common questions and fixes for common problems.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><img class="brand-mark" src="img/logo.png" alt="" width="36" height="36">ListHive <small>Help</small></a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html" aria-current="page">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+    </details>
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="sidebar-title">Help topics</p>
+    <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html" aria-current="page">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+  </aside>
+  <main>
+<span class="eyebrow">Help</span>
+<h1>FAQ &amp; troubleshooting</h1>
+<p class="lede">Quick answers to the questions people ask most. Can't find yours? Email <a href="mailto:apptools.tvl@gmail.com">apptools.tvl@gmail.com</a> and include your app version (<span class="ui">Settings</span> → <span class="ui">ABOUT</span>).</p>
+
+<h2>Getting started</h2>
+<details class="faq"><summary>What's the difference between a library and a list?</summary>
+<p>A <strong>library</strong> is where you keep things permanently, such as every recipe you know. A <strong>list</strong> is a selection from your libraries for a purpose, such as this week's dinners. The same recipe can be in many lists; edit it once in the library and every list sees the change. See <a href="./#two-ideas">The two ideas behind ListHive</a>.</p></details>
+
+<details class="faq"><summary>Do I need an account? Is my data in the cloud?</summary>
+<p>No account is needed, and nothing is uploaded. Everything stays on your phone, so <a href="backup.html">backups</a> are important.</p></details>
+
+<details class="faq"><summary>What are the [Sample] lists on a new install?</summary>
+<p>Examples to show what's possible. Delete them one by one, or all at once with <span class="ui">Settings</span> → <span class="ui">Clear Sample Data</span>.</p></details>
+
+<details class="faq"><summary>Should I use a Simple list or a list with groups?</summary>
+<p>Simple for a one-off (a party, a trip). Groups when the list repeats or has natural parts (weeks, classes, gigs). You can change later. See <a href="my-lists.html#modes">Simple lists and lists with groups</a>.</p></details>
+
+<h2>Libraries and items</h2>
+<details class="faq"><summary>Why can't I choose this type for the primary field?</summary>
+<p>The primary field names each item and must be unique, so only text, number, date, url, email, phone and GPS location are allowed. See <a href="libraries.html#primary">The primary field</a>.</p></details>
+
+<details class="faq"><summary>I removed a value from a select list. What happened to items that used it?</summary>
+<p>Nothing. They keep the old value, marked <em>no longer an option</em>, until you change it.</p></details>
+
+<details class="faq"><summary>If I delete a library item, what happens to my lists?</summary>
+<p>It's removed from every list it was in. To take it out of just one list, long-press it in that list and choose <span class="ui">Remove from group</span> instead.</p></details>
+
+<details class="faq"><summary>I changed a value in a list but the library still shows the old one.</summary>
+<p>That's by design: a change made in the player is a <strong>local override</strong> for that list only (marked with ●). Open it again and tap <span class="ui">Sync to Library</span> to update the library too. See <a href="playback.html#override">Changing a value just for this list</a>.</p></details>
+
+<h2>Import, export and sharing</h2>
+<details class="faq"><summary>My CSV import says the primary field column is missing.</summary>
+<p>One column heading must match the library's primary field name, e.g. <em>Recipe</em> for the Recipe Box (capitals don't matter). Check the first row is headings, not data. <span class="ui">Download CSV Template</span> gives you a file with the right headings.</p></details>
+
+<details class="faq"><summary>Some CSV rows were skipped.</summary>
+<p>Rows are skipped when their primary value is empty, or when an item with that name already exists and <span class="ui">Skip Item</span> is selected. Choose <span class="ui">Replace</span> to update existing items instead.</p></details>
+
+<details class="faq"><summary>Importing a file from Google Drive or WhatsApp fails.</summary>
+<p>Save the file to your phone first (Download), then import it from <span class="ui">Settings</span> → <span class="ui">Import</span>. Also check you have free space of about twice the file's size.</p></details>
+
+<details class="faq"><summary>I imported a list but the ticks and progress are gone.</summary>
+<p>Progress isn't included in <code>.listhive</code> files, so every item arrives un-ticked. A <a href="backup.html">backup</a> keeps progress.</p></details>
+
+<details class="faq"><summary>Why does my shared text not include the photos?</summary>
+<p><span class="ui">Share as Text</span> sends words only. Use <span class="ui">Share Media Files</span> for the photos, or <span class="ui">Export as File</span> to send everything to another ListHive user.</p></details>
+
+<details class="faq"><summary>A link shows no preview picture.</summary>
+<p>Some websites don't provide a preview picture, or refuse to send it to apps. The link itself still works. Tap it to open the page.</p></details>
+
+<h2>Backups and your phone</h2>
+<details class="faq"><summary>I uninstalled ListHive. Can I get my data back?</summary>
+<p>Only if you saved a backup <strong>outside</strong> the app (Drive, Files, email, computer). Backups kept only inside ListHive are deleted with it. Install ListHive again and use <span class="ui">Pick from device</span> to restore. See <a href="backup.html#restore">Restore a backup</a>.</p></details>
+
+<details class="faq"><summary>I forgot my backup password.</summary>
+<p>Sorry, it can't be recovered, and encrypted backups can't be opened without it. Set a new password for future backups.</p></details>
+
+<details class="faq"><summary>I forgot my app lock PIN.</summary>
+<p>If fingerprint or face unlock is on, use that to get in, then <span class="ui">Change PIN</span>. Otherwise the lock can only be removed by clearing ListHive's data in Android settings, which erases everything in the app. Then restore your latest backup.</p></details>
+
+<details class="faq"><summary>How do I move ListHive to a new phone?</summary>
+<p>Back up, share the backup to Drive, install ListHive on the new phone and restore it. Full steps: <a href="backup.html#new-phone">Moving to a new phone</a>.</p></details>
+
+<details class="faq"><summary>ListHive is using a lot of storage.</summary>
+<p>Photos and videos take the most space. Check <span class="ui">Settings</span> → <span class="ui">MEDIA STORAGE</span>, run <span class="ui">Clean Up Unused Files</span>, and lower <span class="ui">Backups to Keep</span> in <span class="ui">Auto-Backup</span>.</p></details>
+
+<h2>Scanning and audio</h2>
+<details class="faq"><summary>Scan Text says the language pack is still downloading.</summary>
+<p>The first scan for each script downloads it. Stay online, wait a minute and tap <span class="ui">Rescan</span>.</p></details>
+
+<details class="faq"><summary>Live transcription isn't offered when I record.</summary>
+<p>Live transcription needs Android 13 or later and speech recognition for your chosen language. On older phones ListHive can transcribe the recording after you stop.</p></details>
+
+<details class="faq"><summary>The QR code scanner says “Not a ListHive file”.</summary>
+<p>The link must lead straight to a <code>.listhive</code> file that anyone can download. For Google Drive, set sharing to <em>Anyone with the link</em>. You can check a link with <span class="ui">Test Link</span> on the <span class="ui">Create QR Code</span> screen.</p></details>
+
+<h2>Ads and purchases</h2>
+<details class="faq"><summary>I paid to remove ads but they're back.</summary>
+<p>This can happen after reinstalling or on a new phone. Go to <span class="ui">Settings</span> → <span class="ui">Restore Purchase</span>, making sure you're signed in to the same Google account you bought with.</p></details>
+
+<details class="faq"><summary>What does ListHive do with my data?</summary>
+<p>Your lists and libraries never leave your phone unless you share or export them yourself. The ad banner is provided by Google AdMob. See the <a href="https://sites.google.com/view/listhive-privacy/home">privacy policy</a> for details.</p></details>
+
+<h2>Still stuck?</h2>
+<p class="prose">Email <a href="mailto:apptools.tvl@gmail.com">apptools.tvl@gmail.com</a> with your app version, your phone model and what you were doing. A screenshot helps, but please don't send anything private.</p>
+
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="settings.html"><span>← Previous</span>Settings</a><a class="next" href="credits.html"><span>Next →</span>Credits</a></nav>
+  </main>
+</div>
+<footer>
+  <div class="inner">
+    <p>ListHive Help · <a href="https://sites.google.com/view/listhive-privacy/home">Privacy policy</a> · <a href="mailto:apptools.tvl@gmail.com">apptools.tvl@gmail.com</a> · <a href="https://play.google.com/store/apps/details?id=com.apptoolstvl.ListHive">ListHive on Google Play</a></p>
+    <p>© 2026 ListHive / apptools.tvl. Recipe photos: Wikimedia Commons contributors, see <a href="credits.html">Credits</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

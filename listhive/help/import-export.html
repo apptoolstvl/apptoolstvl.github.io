@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Import, CSV &amp; QR · ListHive Help</title>
+<meta name="description" content="Import .listhive files, bulk-add items from a spreadsheet and share files with a QR code.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><img class="brand-mark" src="img/logo.png" alt="" width="36" height="36">ListHive <small>Help</small></a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html" aria-current="page">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+    </details>
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="sidebar-title">Help topics</p>
+    <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html" aria-current="page">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+  </aside>
+  <main>
+<span class="eyebrow">Import</span>
+<h1>Import, CSV &amp; QR codes</h1>
+<p class="lede">Bring lists and libraries into ListHive from a <code>.listhive</code> file, add many items at once from a spreadsheet, and share a file with a QR code that others can scan.</p>
+
+<div class="toc">
+  <strong>On this page</strong>
+  <ol>
+    <li><a href="#import-file">Import a .listhive file</a></li>
+    <li><a href="#conflicts">When names already exist</a></li>
+    <li><a href="#csv">Import items from a spreadsheet (CSV)</a></li>
+    <li><a href="#csv-export">Download a CSV template</a></li>
+    <li><a href="#qr-scan">Scan a QR code</a></li>
+    <li><a href="#qr-create">Create a QR code</a></li>
+  </ol>
+</div>
+
+<h2 id="import-file">Import a .listhive file</h2>
+<div class="step">
+  <div class="prose">
+    <p>There are two ways in:</p>
+    <ul>
+      <li><strong>Open the file</strong> from WhatsApp, Gmail, Files or Drive and choose ListHive. You'll be asked <em>Import into ListHive?</em></li>
+      <li>Or go to <span class="ui">Settings</span> → <span class="ui">Import</span> and pick the file.</li>
+    </ul>
+    <p>ListHive shows what's inside, for example <em>2 libraries, 12 items</em> and a list, and whether it <em>Includes media files</em>. Tap <span class="ui">Import</span>. When it finishes, <em>Import Complete</em> lists what was created or merged.</p>
+    <div class="tip"><span class="callout-title">Try it with the example files</span>
+    <p>Download <a href="samples/Recipe-Box.listhive">Recipe-Box.listhive</a>, then <a href="samples/Birthday-Dinner.listhive">Birthday-Dinner.listhive</a>, and open them on your phone. The second file also contains two recipes, so you'll see the <a href="#conflicts">conflict</a> screen.</p></div>
+    <div class="note"><p>For a file in Google Drive or another cloud app, download it to your phone first if the import fails. ListHive also needs free space of about twice the file's size while importing.</p></div>
+  </div>
+  <figure class="shot"><img src="img/import-01-confirm.webp" alt="Import confirmation for H1-Recipe-Box.listhive" width="600" height="1224" loading="lazy"><figcaption>Confirming an import</figcaption></figure>
+</div>
+
+<h2 id="conflicts">When names already exist</h2>
+<div class="step flip">
+  <div class="prose">
+    <p>If the file contains a library or list with the same name as one you already have, <span class="ui">Import Conflicts</span> asks what to do with each one.</p>
+    <p><strong>For a library:</strong></p>
+    <ul>
+      <li><span class="ui">Merge</span> (default): add only the items you don't already have, matched by <a href="libraries.html#primary">primary field</a>. Your existing items aren't changed.</li>
+      <li><span class="ui">Create New</span>: import it as a separate library called e.g. <em>Recipe Box (2)</em>.</li>
+      <li><span class="ui">Overwrite</span>: replace your matching items with the file's version, and add any new ones.</li>
+    </ul>
+    <p><strong>For a list:</strong></p>
+    <ul>
+      <li><span class="ui">Add Groups</span>: bring the file's groups into your list. A group with exactly the same name as one of yours is merged into it; other groups are added as new ones.</li>
+      <li><span class="ui">Create New</span>: import it as a separate list.</li>
+    </ul>
+    <div class="note"><p>Merge and Overwrite only fill fields your library already has. If the file's library has extra fields, choose <span class="ui">Create New</span> to keep them.</p></div>
+  </div>
+  <figure class="shot"><img src="img/import-02-conflicts.webp" alt="Import Conflicts sheet for the Recipe Box: Merge, Create New or Overwrite" width="600" height="1300" loading="lazy"><figcaption>Recipe Box already exists</figcaption></figure>
+</div>
+
+<h2 id="csv">Import items from a spreadsheet (CSV)</h2>
+<div class="step">
+  <div class="prose">
+    <p>Typing in fifty recipes one by one is no fun. If they're in a spreadsheet (Excel, Google Sheets, Numbers), save it as <strong>CSV</strong> and import it into a library.</p>
+    <p>The first row must be the column headings, and one column must be named exactly like the library's primary field (capitals don't matter). For the Recipe Box, that looks like this:</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Recipe</th><th>Cuisine</th><th>Time (min)</th><th>Difficulty</th><th>Serves</th><th>Vegetarian</th></tr></thead>
+      <tbody>
+        <tr><td>Mushroom Risotto</td><td>Italian</td><td>35</td><td>Medium</td><td>4</td><td>yes</td></tr>
+        <tr><td>Chana Masala</td><td>Indian</td><td>30</td><td>Easy</td><td>4</td><td>yes</td></tr>
+        <tr><td>Shepherd's Pie</td><td>British</td><td>75</td><td>Medium</td><td>6</td><td>no</td></tr>
+      </tbody>
+    </table></div>
+    <p>You can download this example as <a href="samples/recipes-to-import.csv">recipes-to-import.csv</a>.</p>
+    <ol class="steps libs">
+      <li>Open the library and tap <span class="ui">CSV</span>.</li>
+      <li>Under <em>If a row's “Recipe” matches an existing item</em>, choose what happens when a name already exists: <span class="ui">Skip Item</span>, <span class="ui">Replace</span> or <span class="ui">Add as Duplicate</span>.</li>
+      <li>Tick <span class="ui">Add new fields found in CSV</span> if the spreadsheet has columns the library doesn't (like <em>Vegetarian</em>). Otherwise those columns are ignored.</li>
+      <li>Tap <span class="ui">Import from CSV</span> and pick the file.</li>
+    </ol>
+  </div>
+  <figure class="shot"><img src="img/lib-11-csv-sheet.webp" alt="Bulk Import / Export sheet with duplicates options and Import from CSV" width="600" height="1300" loading="lazy"><figcaption>The CSV sheet</figcaption></figure>
+</div>
+
+<div class="step flip">
+  <div class="prose">
+    <p>If there are new columns, <span class="ui">New Fields Found</span> shows each one with the type ListHive guessed from its values. <em>Vegetarian</em> holds <em>yes</em> and <em>no</em>, so it's detected as <code>boolean</code>. Tap a different type if the guess is wrong, then <span class="ui">Add 1 Field &amp; Import</span>.</p>
+    <p>ListHive guesses yes/no, numbers, dates, photos, videos, audio, links, emails, phone numbers and multi-line text. It never guesses a select list, tags, file or GPS location, so pick those yourself.</p>
+    <p>When it's done, <em>Import Complete</em> shows how many items were added and how many were skipped. In our example the <em>Greek Salad</em> row was skipped because the Recipe Box already had it.</p>
+  </div>
+  <div class="shots" style="margin:0">
+    <figure class="shot"><img src="img/import-04-new-fields.webp" alt="New Fields Found: Vegetarian detected as Boolean" width="600" height="1300" loading="lazy"><figcaption>A new field, type guessed</figcaption></figure>
+    <figure class="shot"><img src="img/import-05-csv-done.webp" alt="Import Complete: 4 items added, 1 skipped" width="600" height="1300" loading="lazy"><figcaption>The result</figcaption></figure>
+  </div>
+</div>
+
+<h3>Photos and files in a CSV</h3>
+<div class="prose">
+  <p>For photo, video, audio or file columns, put just the <strong>file name</strong> in the cell (e.g. <code>risotto.jpg</code>). For a gallery, separate several names with <code>|</code>. After you pick the CSV, <span class="ui">Locate Media Files</span> asks where those files are: a folder on your phone, a web address they can be downloaded from, or nowhere (text only).</p>
+</div>
+
+<h2 id="csv-export">Download a CSV template</h2>
+<div class="prose">
+  <p>In the same <span class="ui">CSV</span> sheet, <span class="ui">Download CSV Template</span> saves a spreadsheet with the library's columns. It contains every existing item, or just the headings if the library is empty. Fill it in on a computer and import it back. It's also a handy way to get your data into a spreadsheet.</p>
+</div>
+
+<h2 id="qr-scan">Scan a QR code</h2>
+<div class="prose">
+  <p>If someone gives you a ListHive QR code, tap the QR icon at the top of the <span class="ui">My Lists</span> tab and point your camera at it. ListHive downloads the file and offers to import it, just like opening a <code>.listhive</code> file. The first time, you'll be asked to allow the camera.</p>
+</div>
+
+<h2 id="qr-create">Create a QR code</h2>
+<div class="step">
+  <div class="prose">
+    <p>To share a file with many people (a class, a club, a family), upload the <code>.listhive</code> file somewhere online, such as Google Drive or Dropbox, and turn its share link into a QR code:</p>
+    <ol class="steps">
+      <li><a href="sharing.html#export-file">Export</a> the list or library as a file and upload it. Make sure the link is set so <em>anyone with the link</em> can view.</li>
+      <li>Go to <span class="ui">Settings</span> → <span class="ui">Create QR Code</span> and <span class="ui">Paste Link</span>.</li>
+      <li>Tap <span class="ui">Test Link</span> to check that ListHive can download it.</li>
+      <li>Tap <span class="ui">Share QR Code</span> to send or print the picture.</li>
+    </ol>
+    <div class="warn"><p>Anyone with the QR code can download the file. Don't use it for anything private.</p></div>
+  </div>
+  <figure class="shot"><img src="img/import-06-qr-code.webp" alt="QR Code screen with a QR for the Recipe Box sample file" width="600" height="1224" loading="lazy"><figcaption>A QR code for the example Recipe Box</figcaption></figure>
+</div>
+
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="sharing.html"><span>← Previous</span>Sharing</a><a class="next" href="backup.html"><span>Next →</span>Backup &amp; restore</a></nav>
+  </main>
+</div>
+<footer>
+  <div class="inner">
+    <p>ListHive Help · <a href="https://sites.google.com/view/listhive-privacy/home">Privacy policy</a> · <a href="mailto:apptools.tvl@gmail.com">apptools.tvl@gmail.com</a> · <a href="https://play.google.com/store/apps/details?id=com.apptoolstvl.ListHive">ListHive on Google Play</a></p>
+    <p>© 2026 ListHive / apptools.tvl. Recipe photos: Wikimedia Commons contributors, see <a href="credits.html">Credits</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field types · ListHive Help</title>
+<meta name="description" content="All 16 field types, what they store and how they look.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><img class="brand-mark" src="img/logo.png" alt="" width="36" height="36">ListHive <small>Help</small></a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html" aria-current="page">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+    </details>
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="sidebar-title">Help topics</p>
+    <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html" aria-current="page">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+  </aside>
+  <main>
+<span class="eyebrow libs">Libraries</span>
+<h1>Field types</h1>
+<p class="lede">Every field in a library has a type. The type decides how you enter the value and how ListHive shows it. There are 16 types. Between them, the <strong>Recipe Box</strong> and <strong>Kitchen Suppliers</strong> libraries use all of them.</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Type</th><th>Use it for</th><th>How you enter it</th><th>How it looks</th><th>Example</th></tr></thead>
+  <tbody>
+    <tr><td><code>text</code></td><td>Short text: names, titles, codes</td><td>A one-line box</td><td>Label and value on one row</td><td>Recipe: <em>Greek Salad</em></td></tr>
+    <tr><td><code>multiline_text</code></td><td>Longer text with line breaks</td><td>A bigger box</td><td>A block of text under the label</td><td>Ingredients, Method</td></tr>
+    <tr><td><code>number</code></td><td>Amounts, counts, prices, minutes</td><td>A number keypad</td><td>Right-aligned value</td><td>Time (min): <em>15</em></td></tr>
+    <tr><td><code>date</code></td><td>Dates</td><td>Type as <code>YYYY-MM-DD</code>, e.g. <code>2026-10-02</code></td><td>As entered</td><td>Next Order</td></tr>
+    <tr><td><code>boolean</code></td><td>Yes / no questions</td><td>A switch</td><td>A green <em>Yes</em> or red <em>No</em> chip</td><td>Favourite, Open Sundays</td></tr>
+    <tr><td><code>select_list</code></td><td>One choice from a fixed set</td><td>Pick from a drop-down of <a href="libraries.html#allowed-values">allowed values</a></td><td>A single chip</td><td>Cuisine: <em>Italian</em></td></tr>
+    <tr><td><code>multi_select</code></td><td>Tags: any number of free-form labels</td><td>Type a tag and tap <span class="ui">Add</span>; repeat</td><td>A row of chips</td><td>Tags: <em>vegetarian, quick</em></td></tr>
+    <tr><td><code>image</code></td><td>One photo</td><td><span class="ui">Choose Image</span>: camera, gallery or files</td><td>Full-width photo; tap to zoom</td><td>Photo</td></tr>
+    <tr><td><code>picture_group</code></td><td>A gallery of photos</td><td><span class="ui">Add Photos</span> (pick several at once)</td><td>Thumbnails with a <em>+2</em> counter; tap to browse</td><td>Gallery</td></tr>
+    <tr><td><code>video</code></td><td>A video clip</td><td><span class="ui">Choose Video</span></td><td>A built-in player</td><td>How-to Video</td></tr>
+    <tr><td><code>audio</code></td><td>A sound or voice recording</td><td><span class="ui">Choose Audio</span></td><td>A built-in player with speed buttons</td><td>Voice Memo</td></tr>
+    <tr><td><code>file</code></td><td>Any document: PDF, spreadsheet…</td><td><span class="ui">Choose File</span></td><td>Icon, file type and an <span class="ui">Open File</span> button</td><td>Price List (PDF)</td></tr>
+    <tr><td><code>url</code></td><td>Web links</td><td>A web address keyboard</td><td>A link that opens your browser</td><td>Source</td></tr>
+    <tr><td><code>email</code></td><td>Email addresses</td><td>An email keyboard</td><td>The address; double-tap to copy</td><td>Email</td></tr>
+    <tr><td><code>phone</code></td><td>Phone numbers</td><td>A phone keypad</td><td>The number; double-tap to copy</td><td>Phone</td></tr>
+    <tr><td><code>gps_location</code></td><td>A place on the map</td><td>Paste coordinates such as <code>47.6097, -122.3422</code>, or a maps link</td><td>A 📍 link that opens your maps app</td><td>Location</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="shots">
+  <figure class="shot"><img src="img/lib-09-supplier-item.webp" alt="Green Valley Farm Stall supplier showing select list, phone, email, location, photo" width="600" height="1224" loading="lazy"><figcaption>Phone, email, map location and a photo</figcaption></figure>
+  <figure class="shot"><img src="img/lib-10-supplier-item-2.webp" alt="Further down the supplier: yes/no, date, PDF file, audio player and notes" width="600" height="1224" loading="lazy"><figcaption>Yes/no, date, a PDF, a voice memo and notes</figcaption></figure>
+</div>
+
+<h2>Things worth knowing</h2>
+<ul class="prose">
+  <li><strong>Choosing between select list and tags.</strong> Use a <code>select_list</code> when every item has exactly one answer from a short, fixed set (Cuisine, Difficulty, Status). Use <code>multi_select</code> when an item can have several labels and you want to invent new ones as you go (Tags).</li>
+  <li><strong>Which types can be the primary field?</strong> Only text, number, date, url, email, phone and gps_location. See <a href="libraries.html#primary">The primary field</a>.</li>
+  <li><strong>Empty fields.</strong> A field with no value is hidden when you view a library item. When you <a href="playback.html">play a list</a>, empty fields show <em>Long press to add</em> so you can fill them in on the spot.</li>
+  <li><strong>Copying.</strong> Double-tap any value to copy it to the clipboard.</li>
+  <li><strong>Changing a field's type later</strong> is allowed, but values already saved stay as they were typed. For example, text like <em>“about 20”</em> won't become a number.</li>
+  <li><strong>Photos, videos, audio and files are copied into ListHive</strong>, so they keep working even if you delete the original from your gallery. They are included in <a href="backup.html">backups</a> and can go with <a href="sharing.html#export-file">exported files</a>.</li>
+</ul>
+
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="libraries.html"><span>← Previous</span>Libraries</a><a class="next" href="my-lists.html"><span>Next →</span>My Lists</a></nav>
+  </main>
+</div>
+<footer>
+  <div class="inner">
+    <p>ListHive Help · <a href="https://sites.google.com/view/listhive-privacy/home">Privacy policy</a> · <a href="mailto:apptools.tvl@gmail.com">apptools.tvl@gmail.com</a> · <a href="https://play.google.com/store/apps/details?id=com.apptoolstvl.ListHive">ListHive on Google Play</a></p>
+    <p>© 2026 ListHive / apptools.tvl. Recipe photos: Wikimedia Commons contributors, see <a href="credits.html">Credits</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

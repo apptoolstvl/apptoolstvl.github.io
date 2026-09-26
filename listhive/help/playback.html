@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playing a list · ListHive Help</title>
+<meta name="description" content="Step through a list one item at a time, mark items done and adjust values for one occasion.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="./"><img class="brand-mark" src="img/logo.png" alt="" width="36" height="36">ListHive <small>Help</small></a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html" aria-current="page">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+    </details>
+  </div>
+</header>
+<div class="layout">
+  <aside class="sidebar">
+    <p class="sidebar-title">Help topics</p>
+    <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html">My Lists</a></li><li><a href="playback.html" aria-current="page">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+  </aside>
+  <main>
+<span class="eyebrow">My Lists</span>
+<h1>Playing a list</h1>
+<p class="lede">The player shows one item at a time, full screen, so you can work through a list: cooking tonight's recipe, running a class, performing a set. Tap any item in a list or group to open it there.</p>
+
+<div class="toc">
+  <strong>On this page</strong>
+  <ol>
+    <li><a href="#move">Moving through the list</a></li>
+    <li><a href="#done">Marking items done</a></li>
+    <li><a href="#cards">What each kind of item looks like</a></li>
+    <li><a href="#override">Changing a value just for this list</a></li>
+    <li><a href="#tools">Text size, field order and usage</a></li>
+  </ol>
+</div>
+
+<h2 id="move">Moving through the list</h2>
+<div class="step">
+  <div class="prose">
+    <ul>
+      <li><strong>Swipe</strong> left or right, or tap <span class="ui">Next</span> and <span class="ui">Prev</span>.</li>
+      <li>The bar at the top shows how far through you are, e.g. <em>1 of 11</em>.</li>
+      <li>Scroll down within an item to see all its fields: the whole method, ingredients and photos.</li>
+      <li>Tap a photo to open it full screen: pinch to zoom, double-tap to reset.</li>
+      <li><strong>Double-tap</strong> any value to copy it.</li>
+    </ul>
+  </div>
+  <figure class="shot"><img src="img/play-01-recipe.webp" alt="Player showing Spaghetti Aglio e Olio, 1 of 8, with Prev, Mark Done and Next" width="600" height="1224" loading="lazy"><figcaption>A recipe in the player</figcaption></figure>
+</div>
+
+<h2 id="done">Marking items done</h2>
+<div class="step flip">
+  <div class="prose">
+    <p>Tap <span class="ui">Mark Done</span> when you've finished an item. It turns into a green <span class="ui">Done</span> tick. Tap it again to undo.</p>
+    <p>Progress shows up everywhere: ticks in the group, a filling circle on the group card, and a completion rate in <a href="settings.html#trends">Trends</a>.</p>
+    <ul>
+      <li>Section headings and dividers never need ticking.</li>
+      <li>To start fresh next week, open the group, tap <span class="ui">•••</span> and choose <span class="ui">Reset Progress</span>. This clears every tick in that group and can't be undone.</li>
+      <li>You can also tick items without opening them: long-press → <span class="ui">Toggle Done</span>.</li>
+    </ul>
+  </div>
+  <figure class="shot"><img src="img/play-02-done.webp" alt="The same recipe marked Done with a green tick" width="600" height="1224" loading="lazy"><figcaption>Marked done</figcaption></figure>
+</div>
+
+<h2 id="cards">What each kind of item looks like</h2>
+<div class="shots">
+  <figure class="shot"><img src="img/play-03-note.webp" alt="A blue note in the player" width="600" height="1224" loading="lazy"><figcaption><strong>Note</strong>: in its tile colour</figcaption></figure>
+  <figure class="shot"><img src="img/play-05-section.webp" alt="Section heading TUESDAY" width="600" height="1224" loading="lazy"><figcaption><strong>Section</strong>: tap Next to continue</figcaption></figure>
+  <figure class="shot"><img src="img/play-08-audio.webp" alt="Audio note with player, speed buttons and transcript" width="600" height="1224" loading="lazy"><figcaption><strong>Audio note</strong>: play at 0.5×, 1× or 2×, with the transcript below</figcaption></figure>
+  <figure class="shot"><img src="img/play-09-link.webp" alt="Link item with Open Link button" width="600" height="1224" loading="lazy"><figcaption><strong>Link</strong>: tap <em>Open Link</em></figcaption></figure>
+  <figure class="shot"><img src="img/play-10-video.webp" alt="Video item with player controls" width="600" height="1224" loading="lazy"><figcaption><strong>Video</strong>: plays right in the card</figcaption></figure>
+  <figure class="shot"><img src="img/play-06-scan.webp" alt="Scanned recipe card with its recognised text" width="600" height="1224" loading="lazy"><figcaption><strong>Scan</strong>: the photo plus its text</figcaption></figure>
+  <figure class="shot"><img src="img/play-07-local-entry.webp" alt="Grandma's Lemon Cake local entry" width="600" height="1224" loading="lazy"><figcaption><strong>Local entry</strong>: marked at the top</figcaption></figure>
+</div>
+<p class="prose">A <strong>file</strong> shows its name with an <span class="ui">Open in App</span> button, and a <strong>photo</strong> fills the card with its description underneath.</p>
+
+<h2 id="override">Changing a value just for this list</h2>
+<div class="step">
+  <div class="prose">
+    <p>Sometimes a list needs a slightly different version of a library item. On Tuesday the curry is doubled, so <em>Serves</em> should say 6 here, but the Recipe Box should still say 4.</p>
+    <ol class="steps">
+      <li>In the player, <strong>long-press</strong> the value you want to change.</li>
+      <li>Type the new value. The sheet says <em>Local override for this occurrence only</em> and shows the library's <em>Master value</em> underneath.</li>
+      <li>Tap <span class="ui">Save</span>.</li>
+    </ol>
+    <p>Overridden fields are marked with a small ● dot. Open the sheet again to:</p>
+    <ul>
+      <li><span class="ui">Clear Override</span>: go back to the library's value;</li>
+      <li><span class="ui">Sync to Library</span>: make this the new value in the library too, for every list.</li>
+    </ul>
+    <p>Long-pressing an <em>empty</em> field (<em>Long press to add</em>) works the same way.</p>
+  </div>
+  <figure class="shot"><img src="img/play-04-override.webp" alt="Editing Serves: local override 6, master value 4, with Clear Override and Sync to Library" width="600" height="1300" loading="lazy"><figcaption>Serves 6 here, 4 in the library</figcaption></figure>
+</div>
+
+<h2 id="tools">Text size, field order and usage</h2>
+<ul class="prose">
+  <li>The small and large <span class="ui">A</span> buttons make the text smaller or bigger, which helps when the phone is propped up across the kitchen.</li>
+  <li><strong>≡</strong> (on library items) opens <span class="ui">Reorder Fields</span>, so you can put the fields you read first at the top, for example <em>Ingredients</em> before <em>Photo</em>.</li>
+  <li>The <strong>clock</strong> shows <em>Usage</em>: every list and group this item has been used in.</li>
+  <li>The <strong>share</strong> button sends the current item. See <a href="sharing.html">Sharing</a>.</li>
+</ul>
+
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="my-lists.html"><span>← Previous</span>My Lists</a><a class="next" href="sharing.html"><span>Next →</span>Sharing</a></nav>
+  </main>
+</div>
+<footer>
+  <div class="inner">
+    <p>ListHive Help · <a href="https://sites.google.com/view/listhive-privacy/home">Privacy policy</a> · <a href="mailto:apptools.tvl@gmail.com">apptools.tvl@gmail.com</a> · <a href="https://play.google.com/store/apps/details?id=com.apptoolstvl.ListHive">ListHive on Google Play</a></p>
+    <p>© 2026 ListHive / apptools.tvl. Recipe photos: Wikimedia Commons contributors, see <a href="credits.html">Credits</a>.</p>
+  </div>
+</footer>
+</body>
+</html>
