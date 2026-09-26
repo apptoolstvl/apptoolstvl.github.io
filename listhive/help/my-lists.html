@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My Lists · ListHive Help</title>
-<meta name="description" content="Build lists from your libraries: groups, notes, sections, photos, audio notes and local entries.">
+<meta name="description" content="Build lists from notes, sections, photos, links, videos, files, audio notes, scanned text and library items.">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="img/favicon.png">
@@ -15,19 +15,19 @@
     <a class="brand" href="./"><img class="brand-mark" src="img/logo.png" alt="" width="36" height="36">ListHive <small>Help</small></a>
     <details class="menu">
       <summary>Menu</summary>
-      <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html" aria-current="page">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+      <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="my-lists.html" aria-current="page">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="libraries.html">Libraries</a></li><li class="sub"><a href="field-types.html">Field types</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
     </details>
   </div>
 </header>
 <div class="layout">
   <aside class="sidebar">
     <p class="sidebar-title">Help topics</p>
-    <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="libraries.html">Libraries</a></li><li><a href="field-types.html">Field types</a></li><li><a href="my-lists.html" aria-current="page">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
+    <nav aria-label="Help topics"><ul class="nav-list"><li><a href="./">Getting started</a></li><li><a href="my-lists.html" aria-current="page">My Lists</a></li><li><a href="playback.html">Playing a list</a></li><li><a href="libraries.html">Libraries</a></li><li class="sub"><a href="field-types.html">Field types</a></li><li><a href="sharing.html">Sharing</a></li><li><a href="import-export.html">Import, CSV &amp; QR</a></li><li><a href="backup.html">Backup &amp; restore</a></li><li><a href="settings.html">Settings</a></li><li><a href="faq.html">FAQ &amp; troubleshooting</a></li><li><a href="credits.html">Credits</a></li></ul></nav>
   </aside>
   <main>
 <span class="eyebrow">My Lists</span>
 <h1>My Lists</h1>
-<p class="lede">A list is a selection for a purpose. Examples are this week's dinners, one birthday party, a class plan or a gig set list. Lists hold items picked from your libraries, plus notes, section headings, photos, links, videos, files, voice notes and scanned text.</p>
+<p class="lede">A list gathers everything for one purpose: this week's dinners, a birthday party, a class plan, a reading list, a set of bookmarks. You build it from whatever it needs: notes and headings, photos, videos, links, files, voice notes, scanned text, things shared from other apps, and items from your libraries.</p>
 
 <div class="toc">
   <strong>On this page</strong>
@@ -35,11 +35,14 @@
     <li><a href="#create">Create a list</a></li>
     <li><a href="#modes">Simple lists and lists with groups</a></li>
     <li><a href="#groups">Working with groups</a></li>
-    <li><a href="#add-items">Add items from a library</a></li>
-    <li><a href="#local-entry">Local entries</a></li>
-    <li><a href="#other-items">Notes, sections, photos, links and more</a></li>
+    <li><a href="#adding">All the ways to add to a list</a></li>
+    <li><a href="#notes">Notes and section headings</a></li>
+    <li><a href="#media">Photos, videos, files and links</a></li>
     <li><a href="#audio">Audio notes</a></li>
     <li><a href="#scan">Scan text from a photo</a></li>
+    <li><a href="#share-in">Content shared from other apps</a></li>
+    <li><a href="#add-items">Items from a library</a></li>
+    <li><a href="#local-entry">Local entries</a></li>
     <li><a href="#organise">Reorder, move, copy and remove</a></li>
     <li><a href="#visibility">Choose which fields show</a></li>
     <li><a href="#search">Search all your lists</a></li>
@@ -54,7 +57,7 @@
       <li>Type a name such as <em>Holiday Baking</em>, and a description if you like.</li>
       <li>Choose the <span class="ui">MODE</span>: <span class="ui">Simple</span> (<em>Flat list of items</em>) or <span class="ui">Groups</span> (<em>Items organised in groups</em>). See <a href="#modes">below</a>.</li>
       <li>For a list with groups, choose how groups are named under <span class="ui">IDENTIFY GROUPS BY</span>: <span class="ui">Date</span> (e.g. <em>2026-10-04</em>) or <span class="ui">Custom Label</span> (e.g. <em>Weekend · Slow and Sweet</em>).</li>
-      <li>Tap <span class="ui">Create List</span>.</li>
+      <li>Tap <span class="ui">Create List</span>. The list starts empty: <a href="#adding">add whatever it needs</a>.</li>
     </ol>
   </div>
   <figure class="shot"><img src="img/list-01-new-list.webp" alt="New List form with Holiday Baking, Groups mode and Custom Label" width="600" height="1224" loading="lazy"><figcaption>A new list with groups</figcaption></figure>
@@ -89,7 +92,7 @@
 
 <div class="step flip">
   <div class="prose">
-    <p>Open a group to see its items. Library items show their summary fields (<em>Italian · 15 · Easy</em>) and which library they came from. Section headings such as <em>MONDAY</em> break the list into parts, and a green tick marks items that are done.</p>
+    <p>Open a group to see its items. Section headings such as <em>MONDAY</em> break it into parts, notes sit between the dishes, and a green tick marks items that are done.</p>
     <p>The buttons along the top are:</p>
     <ul>
       <li><strong>≡</strong>: reorder mode.</li>
@@ -102,66 +105,64 @@
   <figure class="shot"><img src="img/list-05-group-items.webp" alt="Dinners Mon to Fri group with sections, recipes, notes and ticks" width="600" height="1224" loading="lazy"><figcaption>Inside a group</figcaption></figure>
 </div>
 
-<h2 id="add-items">Add items from a library</h2>
+<h2 id="adding">All the ways to add to a list</h2>
 <div class="step">
   <div class="prose">
-    <p>Tap <span class="ui">+</span> inside a list or group to open <span class="ui">Add to List</span>, then choose what to add:</p>
-    <ul>
-      <li><span class="ui">Library Item</span>: one or more items from a library.</li>
-      <li><span class="ui">Note</span>, <span class="ui">Section Divider</span>: text of your own.</li>
-      <li><span class="ui">Photo</span>, <span class="ui">Video</span>, <span class="ui">File</span>, <span class="ui">URL</span>: media and links.</li>
-      <li><span class="ui">Audio Note</span>: record your voice, with live transcription.</li>
-      <li><span class="ui">Scan Text</span>: read text from a photo.</li>
-    </ul>
+    <p>Tap <span class="ui">+</span> inside a list (or inside a group) to open <span class="ui">Add to List</span>. Pick whatever suits, and mix them freely in the same list:</p>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Choose</th><th>To add</th></tr></thead>
+      <tbody>
+        <tr><td><span class="ui">Note</span></td><td>A few lines of text on a coloured tile (<a href="#notes">more</a>)</td></tr>
+        <tr><td><span class="ui">Section Divider</span></td><td>A heading that splits the list into parts (<a href="#notes">more</a>)</td></tr>
+        <tr><td><span class="ui">Photo</span>, <span class="ui">Video</span></td><td>From the camera, gallery or files (<a href="#media">more</a>)</td></tr>
+        <tr><td><span class="ui">URL</span></td><td>A web link with a title (<a href="#media">more</a>)</td></tr>
+        <tr><td><span class="ui">File</span></td><td>A PDF, spreadsheet or any document (<a href="#media">more</a>)</td></tr>
+        <tr><td><span class="ui">Audio Note</span></td><td>Your voice, with a written transcript (<a href="#audio">more</a>)</td></tr>
+        <tr><td><span class="ui">Scan Text</span></td><td>The words from a photo of a page or card (<a href="#scan">more</a>)</td></tr>
+        <tr><td><span class="ui">Library Item</span></td><td>Ready-made items from one of your libraries, or a one-off <a href="#local-entry">local entry</a> (<a href="#add-items">more</a>)</td></tr>
+      </tbody>
+    </table></div>
+    <p>You can also fill a list <strong>from outside the app</strong>: share a link, text or photo from your browser, gallery or any app into ListHive (<a href="#share-in">more</a>), import a <a href="import-export.html#import-file">.listhive file</a> someone sent you, or scan a <a href="import-export.html#qr-scan">QR code</a>.</p>
   </div>
   <figure class="shot"><img src="img/list-06-add-menu.webp" alt="Add to List menu with nine choices" width="600" height="1224" loading="lazy"><figcaption>Everything a list can hold</figcaption></figure>
 </div>
 
 <div class="step flip">
   <div class="prose">
-    <p>Choosing <span class="ui">Library Item</span> opens <span class="ui">Add Items from Library</span>:</p>
-    <ol class="steps">
-      <li>Check the library next to <span class="ui">From:</span>. Tap it to switch to another library.</li>
-      <li>Search if you need to. <code>@field: text</code> works here too, and the chips sort the list.</li>
-      <li>Tick the items you want. Items already in this group are marked <em>Already added</em>.</li>
-      <li>Tap <span class="ui">Add 2 Items</span> (the number matches your selection).</li>
-    </ol>
-    <p>The ⓘ button previews an item, and the clock shows where it has been used before. That's useful for avoiding the same dinner two weeks running.</p>
-  </div>
-  <figure class="shot"><img src="img/list-07-add-from-library.webp" alt="Add Items from Library with Chana Masala and Mushroom Risotto ticked" width="600" height="1224" loading="lazy"><figcaption>Picking recipes for the week</figcaption></figure>
-</div>
-
-<h2 id="local-entry">Local entries</h2>
-<div class="step">
-  <div class="prose">
-    <p>Sometimes you need something in a list that isn't worth keeping in the library, like a one-off <em>Friday Pizza Night</em>. A <strong>local entry</strong> uses the library's fields but lives only in this list.</p>
-    <ol class="steps">
-      <li>In <span class="ui">Add Items from Library</span>, tap <span class="ui">New Local Entry (using library structure)</span>.</li>
-      <li>Fill in the fields, exactly as for a library item.</li>
-      <li>Tap <span class="ui">Add</span>.</li>
-    </ol>
-    <p>Local entries are marked <em>Local entry</em> in the list. If it turns out to be a keeper, open it and tap <span class="ui">Save to Library</span> to make it a normal library item.</p>
-  </div>
-  <figure class="shot"><img src="img/list-08-local-entry.webp" alt="New Local Entry form for Friday Pizza Night using the Recipe Box fields" width="600" height="1224" loading="lazy"><figcaption>A local entry uses the library's fields</figcaption></figure>
-</div>
-
-<h2 id="other-items">Notes, sections, photos, links and more</h2>
-<div class="step flip">
-  <div class="prose">
-    <p>Sam's Birthday Dinner mixes every kind of item:</p>
+    <p><strong>Sam's Birthday Dinner</strong> shows how varied a list can be. Most of it was added straight into the list:</p>
     <ul>
-      <li><strong>Section Divider</strong>: a heading such as <em>BEFORE THE DAY</em> or <em>CAKE</em>. Sections aren't counted as items and don't need ticking.</li>
-      <li><strong>Note</strong>: free text in one of six tile colours (yellow, green, blue, pink, lavender, peach).</li>
-      <li><strong>File</strong>: the <em>Shopping list.pdf</em>. Tap to open it in another app.</li>
-      <li><strong>URL</strong>: a link with a title, such as <em>Birthday cake ideas</em>.</li>
-      <li><strong>Photo</strong> and <strong>Video</strong>: from the camera, gallery or files, each with a description.</li>
+      <li>a <strong>File</strong>, <em>Shopping list.pdf</em>;</li>
+      <li>an <strong>Audio Note</strong>, <em>Reminder from the market</em>;</li>
+      <li>a <strong>URL</strong>, <em>Birthday cake ideas</em>;</li>
+      <li>a <strong>Video</strong> of the pasta water;</li>
+      <li>coloured <strong>Notes</strong> and <strong>Section</strong> headings (<em>BEFORE THE DAY</em>, <em>STARTER</em>, <em>MAIN</em>, <em>CAKE</em>);</li>
+      <li>a <strong>Scan</strong> of Grandma's recipe card and a <strong>Photo</strong> of the cake.</li>
     </ul>
-    <p>To change a note, photo, video, file or link later, long-press it and choose <span class="ui">Edit</span> (or <span class="ui">Edit Description</span>).</p>
+    <p>Only the Greek Salad and the pasta come from the Recipe Box library.</p>
   </div>
   <div class="shots" style="margin:0">
     <figure class="shot"><img src="img/list-09-simple-list.webp" alt="Sam's Birthday Dinner with a PDF, audio note, link and library items" width="600" height="1224" loading="lazy"><figcaption>File, audio note, link, recipes</figcaption></figure>
     <figure class="shot"><img src="img/list-09b-simple-list-2.webp" alt="Video, a yellow note, a local entry and a scanned recipe card" width="600" height="1224" loading="lazy"><figcaption>Video, note, local entry, scan</figcaption></figure>
   </div>
+</div>
+
+<h2 id="notes">Notes and section headings</h2>
+<div class="prose">
+  <ul>
+    <li><strong>Note</strong>: tap <span class="ui">+</span> → <span class="ui">Note</span>, type, pick a tile colour (yellow, green, blue, pink, lavender or peach) and tap <span class="ui">Add Note</span>. The scan icon in the note box can fill it from a photo of some text.</li>
+    <li><strong>Section Divider</strong>: tap <span class="ui">+</span> → <span class="ui">Section Divider</span>, type a heading such as <em>MONDAY</em> or <em>CAKE</em>, and tap <span class="ui">Add Section</span>. Sections split a long list into parts, aren't counted as items, and never need ticking.</li>
+  </ul>
+  <p>Notes count as items, so you can tick them off too, which is handy for reminders like <em>Garlic into the oil at 19:25</em>. To change a note later, long-press it and choose <span class="ui">Edit</span>.</p>
+</div>
+
+<h2 id="media">Photos, videos, files and links</h2>
+<div class="prose">
+  <ul>
+    <li><strong>Photo</strong> and <strong>Video</strong>: choose <span class="ui">Camera</span>, the <span class="ui">Photo Library</span> / <span class="ui">Video Library</span>, or <span class="ui">Browse Files</span>, then add a description. Photos open full screen with pinch-to-zoom; videos play right in the list.</li>
+    <li><strong>File</strong>: any document, such as a PDF shopping list, a spreadsheet or a ticket. Tap it later to open it in another app.</li>
+    <li><strong>URL</strong>: paste a web address and give it a title, e.g. <em>Birthday cake ideas</em>. Tap <span class="ui">Open Link</span> to visit it.</li>
+  </ul>
+  <p>ListHive keeps its own copy of photos, videos and files, so they keep working even if you delete the originals. To change a description later, long-press the item and choose <span class="ui">Edit Description</span> (or <span class="ui">Edit</span> for a link).</p>
 </div>
 
 <h2 id="audio">Audio notes</h2>
@@ -193,16 +194,57 @@
   <figure class="shot"><img src="img/list-12-scan-text.webp" alt="Scan Text sheet with Latin script selected and Choose an Image" width="600" height="1300" loading="lazy"><figcaption>Scan Text</figcaption></figure>
 </div>
 
-<h2 id="organise">Reorder, move, copy and remove</h2>
+<h2 id="share-in">Content shared from other apps</h2>
 <div class="step">
+  <div class="prose">
+    <p>Often the quickest way to fill a list is from the app you're already in. In your browser, gallery, YouTube or almost any app, tap <strong>Share</strong> and choose <strong>ListHive</strong>. Then pick <span class="ui">Add Link</span>, <span class="ui">Add Note</span> or <span class="ui">Add Media</span>, choose the list (and group) and tap <span class="ui">Save</span>. You can even create a new list on the spot.</p>
+    <p>Full details: <a href="sharing.html#share-in">Save things from other apps</a>.</p>
+  </div>
+  <figure class="shot"><img src="img/share-04-receiver-link.webp" alt="Saving a shared Focaccia link to Sam's Birthday Dinner" width="600" height="1300" loading="lazy"><figcaption>A shared link going into a list</figcaption></figure>
+</div>
+
+<h2 id="add-items">Items from a library</h2>
+<div class="step flip">
+  <div class="prose">
+    <p>If you keep reusable things in a <a href="libraries.html">library</a>, you can drop them into any list without typing them again. Library items show their summary fields (<em>Italian · 15 · Easy</em>) and which library they came from. Edit the item in its library and every list that uses it sees the change.</p>
+    <ol class="steps">
+      <li>Tap <span class="ui">+</span> → <span class="ui">Library Item</span> to open <span class="ui">Add Items from Library</span>.</li>
+      <li>Check the library next to <span class="ui">From:</span>. Tap it to switch.</li>
+      <li>Search if you need to. <code>@field: text</code> works here too, and the chips sort the list.</li>
+      <li>Tick the items you want. Items already here are marked <em>Already added</em>.</li>
+      <li>Tap <span class="ui">Add 2 Items</span> (the number matches your selection).</li>
+    </ol>
+    <p>The ⓘ button previews an item, and the clock shows where it has been used before. That's useful for avoiding the same dinner two weeks running.</p>
+    <p>You can also go the other way: open an item in its library and tap <span class="ui">Add to My List</span>.</p>
+  </div>
+  <figure class="shot"><img src="img/list-07-add-from-library.webp" alt="Add Items from Library with Chana Masala and Mushroom Risotto ticked" width="600" height="1224" loading="lazy"><figcaption>Picking recipes for the week</figcaption></figure>
+</div>
+
+<h2 id="local-entry">Local entries</h2>
+<div class="step">
+  <div class="prose">
+    <p>Sometimes a list needs something shaped like a library item that isn't worth keeping in the library, like a one-off <em>Friday Pizza Night</em>. A <strong>local entry</strong> uses the library's fields but lives only in this list.</p>
+    <ol class="steps">
+      <li>In <span class="ui">Add Items from Library</span>, tap <span class="ui">New Local Entry (using library structure)</span>.</li>
+      <li>Fill in the fields, exactly as for a library item.</li>
+      <li>Tap <span class="ui">Add</span>.</li>
+    </ol>
+    <p>Local entries are marked <em>Local entry</em> in the list. If it turns out to be a keeper, open it and tap <span class="ui">Save to Library</span> to make it a normal library item.</p>
+  </div>
+  <figure class="shot"><img src="img/list-08-local-entry.webp" alt="New Local Entry form for Friday Pizza Night using the Recipe Box fields" width="600" height="1224" loading="lazy"><figcaption>A local entry uses the library's fields</figcaption></figure>
+</div>
+
+<h2 id="organise">Reorder, move, copy and remove</h2>
+<div class="step flip">
   <div class="prose">
     <p><strong>Long-press</strong> any item for its menu:</p>
     <ul>
+      <li><span class="ui">Edit</span> / <span class="ui">Edit Description</span>: for notes, photos, videos, files and links.</li>
       <li><span class="ui">Select</span>: start selecting several items. The bar at the bottom then offers <span class="ui">Share</span>, <span class="ui">Move</span>, <span class="ui">Copy</span> and <span class="ui">Remove</span>.</li>
       <li><span class="ui">Toggle Done</span>: tick or untick without opening the player.</li>
-      <li><span class="ui">Duplicate</span>: an extra copy in the same group.</li>
+      <li><span class="ui">Duplicate</span>: an extra copy in the same place.</li>
       <li><span class="ui">Move to…</span> / <span class="ui">Copy to…</span>: send it to another group or list.</li>
-      <li><span class="ui">Remove from group</span>: takes it out of this list only. The library item is not deleted.</li>
+      <li><span class="ui">Remove from group</span>: takes it out of this list only. A library item stays in its library.</li>
     </ul>
     <p>To change the order, tap <strong>≡</strong> at the top, then long-press and drag items. Tap <span class="ui">Done</span> to save.</p>
   </div>
@@ -213,9 +255,9 @@
 </div>
 
 <h2 id="visibility">Choose which fields show</h2>
-<div class="step flip">
+<div class="step">
   <div class="prose">
-    <p>Tap <strong>▤</strong> at the top of a list or group to decide, field by field:</p>
+    <p>For library items and local entries, tap <strong>▤</strong> at the top of a list or group to decide, field by field:</p>
     <ul>
       <li><strong>View</strong>: whether the field is shown when you play the list;</li>
       <li><strong>Share</strong>: whether it's included when you share the list as text or a picture.</li>
@@ -230,7 +272,7 @@
   <p>The search box at the top of the <span class="ui">My Lists</span> tab looks through every list, group and item at once. Type at least two letters and results appear under <em>Lists</em>, <em>Groups</em> and <em>Items</em>. Tap a result to jump straight to it.</p>
 </div>
 
-<nav class="pager" aria-label="Previous and next page"><a class="prev" href="field-types.html"><span>← Previous</span>Field types</a><a class="next" href="playback.html"><span>Next →</span>Playing a list</a></nav>
+<nav class="pager" aria-label="Previous and next page"><a class="prev" href="./"><span>← Previous</span>Getting started</a><a class="next" href="playback.html"><span>Next →</span>Playing a list</a></nav>
   </main>
 </div>
 <footer>
